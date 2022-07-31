@@ -65,7 +65,7 @@ public class ProductTest extends TestBase {
 		UIKeywords.enterText(By.xpath("//input[@placeholder='Search for products, brands and more']"), "polo men");
 
 		UIKeywords.hitButton(KeyEvent.VK_ENTER);
-
+ 
 		List<String> productTitles = UIKeywords.getTexts(By.xpath("//h3[@class='product-brand']"));
 
 		for (String producttitle : productTitles) {
