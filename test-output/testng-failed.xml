@@ -3,6 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.iris22a.MenTShirtTest">
+        <methods>
+          <include name="verifySearchResultByPopularity"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.iris22a.MenTShirtTest -->
+=======
       <class name="com.iris22a.ProductTest">
         <methods>
           <include name="verifySerchResultForPoloMen"/>
@@ -10,6 +19,7 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.iris22a.ProductTest -->
+>>>>>>> a8e46349eafa42ac7901aebce4941e5f3e234811
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
