@@ -45,9 +45,7 @@ public class UIKeywords {
 	}
 
 	public static void switchWindow(String bytitle) {
-		String ParentWindow = driver.getWindowHandle();
 		Set<String> windows = driver.getWindowHandles();
-		String title = driver.getTitle();
 		for (String window : windows) {
 			if (driver.switchTo().window(window).getTitle().equals(bytitle)) {
 				System.out.println("switch on window " + bytitle);
@@ -64,12 +62,12 @@ public class UIKeywords {
 	}
 
 	public static void hitButton(int keyvalue) {
+
 		Robot robo;
 		try {
 			robo = new Robot();
 			robo.keyPress(keyvalue);
 			robo.keyRelease(keyvalue);
-
 		} catch (AWTException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -89,73 +87,75 @@ public class UIKeywords {
 
 	public static void mouseMove(By xpath) {
 		Actions act = new Actions(driver);
-		act.moveToElement(driver.findElement(xpath)).build().perform();;
+		act.moveToElement(driver.findElement(xpath)).build().perform();
+		;
 
 	}
 
 	public static void click(By xpath) {
-     driver.findElement(xpath).click();	
+		driver.findElement(xpath).click();
 	}
-	public static void click(String locatortype,String locatorvalue) {
+
+	public static void click(String locatortype, String locatorvalue) {
 		getWebElement(locatortype, locatorvalue).click();
 	}
-	
-	public static WebElement getWebElement(String locatortype,String locatorvalue) {
-		WebElement element=null;
+
+	public static WebElement getWebElement(String locatortype, String locatorvalue) {
+		WebElement element = null;
 		if (locatortype.equalsIgnoreCase("xpath")) {
-			element=driver.findElement(By.xpath(locatorvalue));
-		}else if(locatortype.equalsIgnoreCase("id")) {
-			element=driver.findElement(By.id(locatorvalue));
-		}else if(locatortype.equalsIgnoreCase("cssSelector")) {
-			element=driver.findElement(By.cssSelector(locatorvalue));
-		}else if(locatortype.equalsIgnoreCase("linkText")) {
-			element=driver.findElement(By.linkText(locatorvalue));
-		}else if(locatortype.equalsIgnoreCase("partialLinkText")) {
-			element=driver.findElement(By.partialLinkText(locatorvalue));
-		}else if(locatortype.equalsIgnoreCase("className")) {
-			element=driver.findElement(By.className(locatorvalue));
-		}else if(locatortype.equalsIgnoreCase("tagName")) {
-			element=driver.findElement(By.tagName(locatorvalue));
-		}else if(locatortype.equalsIgnoreCase("name")) {
-			element=driver.findElement(By.name(locatorvalue));
-			
+			element = driver.findElement(By.xpath(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("id")) {
+			element = driver.findElement(By.id(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("cssSelector")) {
+			element = driver.findElement(By.cssSelector(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("linkText")) {
+			element = driver.findElement(By.linkText(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("partialLinkText")) {
+			element = driver.findElement(By.partialLinkText(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("className")) {
+			element = driver.findElement(By.className(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("tagName")) {
+			element = driver.findElement(By.tagName(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("name")) {
+			element = driver.findElement(By.name(locatorvalue));
+
 		}
 		return element;
 	}
- public static List<WebElement> getWebElements(String locatortype,String locatorvalue) {
-	List<WebElement> elements=new ArrayList<WebElement>();
-	if (locatortype.equalsIgnoreCase("xpath")) {
-		elements=driver.findElements(By.xpath(locatorvalue));
-	}else if(locatortype.equalsIgnoreCase("id")) {
-		elements=driver.findElements(By.id(locatorvalue));
-	}else if(locatortype.equalsIgnoreCase("cssSelector")) {
-		elements=driver.findElements(By.cssSelector(locatorvalue));
-	}else if(locatortype.equalsIgnoreCase("linkText")) {
-		elements=driver.findElements(By.linkText(locatorvalue));
-	}else if(locatortype.equalsIgnoreCase("partialLinkText")) {
-		elements=driver.findElements(By.partialLinkText(locatorvalue));
-	}else if(locatortype.equalsIgnoreCase("className")) {
-		elements=driver.findElements(By.className(locatorvalue));
-	}else if(locatortype.equalsIgnoreCase("tagName")) {
-		elements=driver.findElements(By.tagName(locatorvalue));
-	}else if(locatortype.equalsIgnoreCase("name")) {
-		elements=driver.findElements (By.name(locatorvalue));
-		
-	}
-	return elements;
 
-}
-	
+	public static List<WebElement> getWebElements(String locatortype, String locatorvalue) {
+		List<WebElement> elements = new ArrayList<WebElement>();
+		if (locatortype.equalsIgnoreCase("xpath")) {
+			elements = driver.findElements(By.xpath(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("id")) {
+			elements = driver.findElements(By.id(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("cssSelector")) {
+			elements = driver.findElements(By.cssSelector(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("linkText")) {
+			elements = driver.findElements(By.linkText(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("partialLinkText")) {
+			elements = driver.findElements(By.partialLinkText(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("className")) {
+			elements = driver.findElements(By.className(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("tagName")) {
+			elements = driver.findElements(By.tagName(locatorvalue));
+		} else if (locatortype.equalsIgnoreCase("name")) {
+			elements = driver.findElements(By.name(locatorvalue));
 
-	public static void mouseMove(String locatortype,String locatorvalue) {
-		Actions action =new Actions(driver);
-		action.moveToElement(getWebElement(locatortype, locatorvalue)).perform();
-		
 		}
+		return elements;
 
-	public static List<String> getTexts(String locatortype,String locatorvalue) {
+	}
+
+	public static void mouseMove(String locatortype, String locatorvalue) {
+		Actions action = new Actions(driver);
+		action.moveToElement(getWebElement(locatortype, locatorvalue)).perform();
+
+	}
+
+	public static List<String> getTexts(String locatortype, String locatorvalue) {
 		List<WebElement> elements = getWebElements(locatortype, locatorvalue);
-		List<String> texts = new ArrayList<String>();	
+		List<String> texts = new ArrayList<String>();
 		for (WebElement elemnt : elements) {
 			texts.add(elemnt.getText());
 		}
@@ -168,13 +168,13 @@ public class UIKeywords {
 
 	public static void mouseMove(WebElement element) {
 		Actions act = new Actions(driver);
-		act.moveToElement(element).build().perform();;
-		
+		act.moveToElement(element).build().perform();
+		;
+
 	}
 
 	public static void click(WebElement element) {
 		element.click();
-		
-	}
 
+	}
 }

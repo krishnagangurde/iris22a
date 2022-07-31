@@ -1,13 +1,11 @@
 package com.iris22a;
 
-import static org.testng.Assert.assertEquals;
-
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,15 +19,14 @@ public class ProductTest extends TestBase {
 	public static void verifySerchResultForPoloMen() {
 
 		PropUtils repo = new PropUtils();
-//		Environment env= new Environment();
-//		UIKeywords.launchUrl(env.getAppUrl());
 		UIKeywords.launchUrl(Environment.URL);
 
-		UIKeywords.enterText(repo.getLocator("search_txt_bx")[0],repo.getLocator("search_txt_bx")[1],"polo men");
+		UIKeywords.enterText(repo.getLocator("search_txt_bx")[0], repo.getLocator("search_txt_bx")[1], "polo men");
 
 		UIKeywords.hitButton(KeyEvent.VK_ENTER);
 
-		List<String> productTitles = UIKeywords.getTexts(repo.getLocator("product_title_txt")[0],repo.getLocator("product_title_txt")[1]);
+		List<String> productTitles = UIKeywords.getTexts(repo.getLocator("product_title_txt")[0],
+				repo.getLocator("product_title_txt")[1]);
 
 		for (String producttitle : productTitles) {
 			Assert.assertTrue(producttitle.contains("Polo"),
@@ -49,26 +46,31 @@ public class ProductTest extends TestBase {
 		expected.add("Sweaters");
 		expected.add("Blazers");
 
-//		expected.add("Tshirts(82796)");
-//		expected.add("Shirts(72333)");
-//		expected.add("Kurtas(13524)");
-//		expected.add("Sweatshirts(12997)");
-//		expected.add("Jackets(10011)");
-//		expected.add("Sweaters(5888)");
-//		expected.add("Blazers(3355)");
 
 		PropUtils repo = new PropUtils();
 		UIKeywords.launchUrl(Environment.URL);
-		UIKeywords.mouseMove(repo.getLocator("men_menu")[0],repo.getLocator("men_menu")[1]);
-		UIKeywords.click(repo.getLocator("topwear_menu")[0],repo.getLocator("topwear_menu")[1]);
-		List<String> actualcategory = UIKeywords.getTexts(repo.getLocator("category_text")[0],repo.getLocator("category_text")[1]);
+		UIKeywords.mouseMove(repo.getLocator("men_menu")[0], repo.getLocator("men_menu")[1]);
+		UIKeywords.click(repo.getLocator("topwear_menu")[0], repo.getLocator("topwear_menu")[1]);
+		List<String> actualcategory = UIKeywords.getTexts(repo.getLocator("category_text")[0],
+				repo.getLocator("category_text")[1]);
 		for (int i = 0; i < actualcategory.size(); i++) {
 			actualcategory.set(i, actualcategory.get(i).split("\\(")[0]);
-}
-		System.out.println("List of category" +actualcategory);
+		}
+		System.out.println("List of category" + actualcategory);
 
 		Assert.assertTrue(actualcategory.containsAll(expected), "List of Categaory is not matching" + actualcategory);
 
+		UIKeywords.launchUrl("https://www.myntra.com/");
+
+		UIKeywords.enterText(By.xpath("//input[@placeholder='Search for products, brands and more']"), "polo men");
+
+		UIKeywords.hitButton(KeyEvent.VK_ENTER);
+
+		List<String> productTitles = UIKeywords.getTexts(By.xpath("//h3[@class='product-brand']"));
+
+		for (String producttitle : productTitles) {
+			Assert.assertTrue(producttitle.contains("Polo"), " product title  doesnt contain polo men " + producttitle);
+		}
 	}
 
 }
