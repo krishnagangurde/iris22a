@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -8,6 +9,17 @@
     <test started-at="2022-08-01T20:50:18 IST" name="Default test" finished-at="2022-08-01T20:50:33 IST" duration-ms="15258">
       <class name="com.iris22a.MenTShirtTest">
         <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.iris22a.MenTShirtTest@50378a4]" started-at="2022-08-01T20:50:18 IST" name="setUp" finished-at="2022-08-01T20:50:23 IST" duration-ms="5488" status="PASS">
+=======
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-31T23:32:53 IST" name="Default suite" finished-at="2022-07-31T23:34:17 IST" duration-ms="84485">
+    <groups>
+    </groups>
+    <test started-at="2022-07-31T23:32:53 IST" name="Default test" finished-at="2022-07-31T23:34:17 IST" duration-ms="84485">
+      <class name="com.iris22a.ProductTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.iris22a.ProductTest@741a8937]" started-at="2022-07-31T23:32:53 IST" name="setUp" finished-at="2022-07-31T23:33:04 IST" duration-ms="11271" status="PASS">
+>>>>>>> 457f2bd052eb09ac669794235b14eaba213c6c82
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,6 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
+<<<<<<< HEAD
         <test-method signature="verifySearchResultByPopularity()[pri:0, instance:com.iris22a.MenTShirtTest@50378a4]" started-at="2022-08-01T20:50:23 IST" name="verifySearchResultByPopularity" finished-at="2022-08-01T20:50:33 IST" duration-ms="9456" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -25,6 +38,17 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.iris22a.MenTShirtTest -->
+=======
+        <test-method signature="verifyCategryListForTopwear()[pri:0, instance:com.iris22a.ProductTest@741a8937]" started-at="2022-07-31T23:33:04 IST" name="verifyCategryListForTopwear" finished-at="2022-07-31T23:34:16 IST" duration-ms="71923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategryListForTopwear -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iris22a.ProductTest@741a8937]" started-at="2022-07-31T23:34:16 IST" name="tearDown" finished-at="2022-07-31T23:34:17 IST" duration-ms="1139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.iris22a.ProductTest -->
+>>>>>>> 457f2bd052eb09ac669794235b14eaba213c6c82
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

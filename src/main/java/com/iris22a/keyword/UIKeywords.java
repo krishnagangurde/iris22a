@@ -179,4 +179,7 @@ public class UIKeywords {
 		element.click();
 
 	}
+	public static RemoteWebDriver getDriver() {
+		return driver;
+	}
 }
