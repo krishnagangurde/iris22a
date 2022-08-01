@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-=======
-<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T15:21:31 IST" name="Default suite" finished-at="2022-07-29T15:21:49 IST" duration-ms="17908">
+  <suite started-at="2022-08-01T15:05:34 IST" name="Default suite" finished-at="2022-08-01T15:06:03 IST" duration-ms="28921">
     <groups>
     </groups>
-    <test started-at="2022-07-29T15:21:31 IST" name="Default test" finished-at="2022-07-29T15:21:49 IST" duration-ms="17908">
+    <test started-at="2022-08-01T15:05:34 IST" name="Default test" finished-at="2022-08-01T15:06:03 IST" duration-ms="28921">
       <class name="com.iris22a.MenTShirtTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.iris22a.MenTShirtTest@6404f418]" started-at="2022-07-29T15:21:31 IST" name="setUp" finished-at="2022-07-29T15:21:36 IST" duration-ms="4052" status="PASS">
-=======
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
->>>>>>> a6e1f9bb33a9e6a9e76ec80a68a907a0e7c9c245
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2022-07-24T16:40:15 IST" name="Default suite" finished-at="2022-07-24T16:41:15 IST" duration-ms="60330">
-    <groups>
-    </groups>
-    <test started-at="2022-07-24T16:40:15 IST" name="Default test" finished-at="2022-07-24T16:41:15 IST" duration-ms="60330">
-      <class name="com.iris22a.ProductTest">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.iris22a.ProductTest@74751b3]" started-at="2022-07-24T16:40:15 IST" name="setUp" finished-at="2022-07-24T16:40:34 IST" duration-ms="18350" status="PASS">
-=======
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.iris22a.ProductTest@5acf93bb]" started-at="2022-07-22T13:29:40 IST" name="setUp" finished-at="2022-07-22T13:29:45 IST" duration-ms="5178" status="PASS">
->>>>>>> a8e46349eafa42ac7901aebce4941e5f3e234811
->>>>>>> a6e1f9bb33a9e6a9e76ec80a68a907a0e7c9c245
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.iris22a.MenTShirtTest@60f00693]" started-at="2022-08-01T15:05:34 IST" name="setUp" finished-at="2022-08-01T15:05:38 IST" duration-ms="4511" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -36,70 +16,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-<<<<<<< HEAD
-        <test-method signature="verifySerchResultForPoloMen()[pri:0, instance:com.iris22a.ProductTest@74751b3]" started-at="2022-07-24T16:40:34 IST" name="verifySerchResultForPoloMen" finished-at="2022-07-24T16:41:10 IST" duration-ms="36782" status="PASS">
-=======
-<<<<<<< HEAD
-        <test-method signature="verifySearchResultByPopularity()[pri:0, instance:com.iris22a.MenTShirtTest@6404f418]" started-at="2022-07-29T15:21:36 IST" name="verifySearchResultByPopularity" finished-at="2022-07-29T15:21:45 IST" duration-ms="9361" status="PASS">
+        <test-method signature="verifySearchResultByPopularity()[pri:0, instance:com.iris22a.MenTShirtTest@60f00693]" started-at="2022-08-01T15:05:38 IST" name="verifySearchResultByPopularity" finished-at="2022-08-01T15:05:58 IST" duration-ms="20067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResultByPopularity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iris22a.MenTShirtTest@6404f418]" started-at="2022-07-29T15:21:45 IST" name="tearDown" finished-at="2022-07-29T15:21:49 IST" duration-ms="4390" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iris22a.MenTShirtTest@60f00693]" started-at="2022-08-01T15:05:58 IST" name="tearDown" finished-at="2022-08-01T15:06:03 IST" duration-ms="4248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.iris22a.MenTShirtTest -->
-=======
-        <test-method signature="verifySerchResultForPoloMen()[pri:0, instance:com.iris22a.ProductTest@5acf93bb]" started-at="2022-07-22T13:29:45 IST" name="verifySerchResultForPoloMen" finished-at="2022-07-22T13:29:56 IST" duration-ms="10896" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[ product title  doesnt contain polo men Nautica expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError:  product title  doesnt contain polo men Nautica expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at com.iris22a.ProductTest.verifySerchResultForPoloMen(ProductTest.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
->>>>>>> a6e1f9bb33a9e6a9e76ec80a68a907a0e7c9c245
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySerchResultForPoloMen -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iris22a.ProductTest@74751b3]" started-at="2022-07-24T16:41:10 IST" name="tearDown" finished-at="2022-07-24T16:41:15 IST" duration-ms="5051" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.iris22a.ProductTest -->
->>>>>>> a8e46349eafa42ac7901aebce4941e5f3e234811
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

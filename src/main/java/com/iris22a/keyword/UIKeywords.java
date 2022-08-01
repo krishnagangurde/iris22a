@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,6 +18,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class UIKeywords {
+	public static final Logger log = Logger.getLogger(UIKeywords.class);
 	public static RemoteWebDriver driver;
 
 	public static void openBrowser(String browserName) {
@@ -35,20 +37,20 @@ public class UIKeywords {
 
 	public static void launchUrl(String url) {
 		driver.get(url);
-		System.out.println("url is launched " + url);
+		log.info("url is launched " + url);
 
 	}
 
 	public static void closeBrowser() {
 		driver.close();
-		System.out.println("url is closed succefully");
+		log.info("url is closed succefully");
 	}
 
 	public static void switchWindow(String bytitle) {
 		Set<String> windows = driver.getWindowHandles();
 		for (String window : windows) {
 			if (driver.switchTo().window(window).getTitle().equals(bytitle)) {
-				System.out.println("switch on window " + bytitle);
+				log.info("switch on window " + bytitle);
 				break;
 			}
 		}
@@ -57,7 +59,7 @@ public class UIKeywords {
 
 	public static void enterText(By element, String text) {
 		driver.findElement(element).sendKeys(text);
-		System.out.println(text + ": text enter in serch box ");
+		log.info(text + ": text enter in serch box ");
 
 	}
 
@@ -72,7 +74,7 @@ public class UIKeywords {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("Enter button has press ");
+		log.info("Enter button has press ");
 	}
 
 	public static List<String> getTexts(By element) {
@@ -169,7 +171,7 @@ public class UIKeywords {
 	public static void mouseMove(WebElement element) {
 		Actions act = new Actions(driver);
 		act.moveToElement(element).build().perform();
-		;
+		
 
 	}
 

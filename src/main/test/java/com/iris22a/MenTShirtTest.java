@@ -15,11 +15,12 @@ public class MenTShirtTest extends TestBase {
 	@Test
 	public void verifySearchResultByPopularity() {
 		keyword.launchUrl(Environment.URL);
-        HomePage home = new HomePage();
+		HomePage home = new HomePage();
 		home.hoverOnMenMenu();
 		home.clickOnmenTShirt();
-		menTShirtsPage menTShirt1 = PageFactory.initElements(UIKeywords.driver, menTShirtsPage.class);
+		menTShirtsPage menTShirt1 =PageFactory.initElements(UIKeywords.driver, menTShirtsPage.class);
 		menTShirt1.selectPopularityFilter();
+		
 
 	}
 
