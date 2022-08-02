@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -22,9 +23,14 @@ public class UIKeywords {
 	public static RemoteWebDriver driver;
 
 	public static void openBrowser(String browserName) {
+
 		if (browserName.equalsIgnoreCase("Chrome")) {
+			ChromeOptions option = new ChromeOptions();
+			option.addArguments("−−incognito");
+			option.addArguments("start-maximized");
+//			option.addArguments("–disable-notifications");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(option);
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
@@ -54,12 +60,6 @@ public class UIKeywords {
 				break;
 			}
 		}
-
-	}
-
-	public static void enterText(By element, String text) {
-		driver.findElement(element).sendKeys(text);
-		log.info(text + ": text enter in serch box ");
 
 	}
 
@@ -171,7 +171,6 @@ public class UIKeywords {
 	public static void mouseMove(WebElement element) {
 		Actions act = new Actions(driver);
 		act.moveToElement(element).build().perform();
-		
 
 	}
 
@@ -179,7 +178,19 @@ public class UIKeywords {
 		element.click();
 
 	}
+
 	public static RemoteWebDriver getDriver() {
 		return driver;
 	}
+
+	public static void enterText(WebElement element, String productname) {
+		element.sendKeys(productname);
+
+	}
+
+	public static void enterText(By element, String text) {
+		driver.findElement(element).sendKeys(text);
+
+	}
+
 }
