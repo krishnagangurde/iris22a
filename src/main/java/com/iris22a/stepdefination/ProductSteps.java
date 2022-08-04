@@ -2,10 +2,8 @@ package com.iris22a.stepdefination;
 
 import java.util.List;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import com.iris22a.config.TestBase;
 import com.iris22a.keyword.UIKeywords;
 import com.iris22a.pages.HomePage;
 import com.iris22a.utils.Environment;
@@ -15,7 +13,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class ProductSteps extends TestBase {
+public class ProductSteps {
 	@Given("chrome browser should open.")
 	public void browseropen() {
 		UIKeywords.openBrowser("Chrome");
@@ -45,5 +43,4 @@ public class ProductSteps extends TestBase {
 		UIKeywords.closeBrowser();
 
 	}
-
 }
