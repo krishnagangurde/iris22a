@@ -192,5 +192,13 @@ public class UIKeywords {
 		driver.findElement(element).sendKeys(text);
 
 	}
+	public static List<String> getTexts(List<WebElement> element) {
+		List<String> texts = new ArrayList<String>();
+		for (WebElement ele : element) {
+			texts.add(ele.getText());
+		}
+		return texts;
+
+	}
 
 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.iris22a.ProductTest">
         <methods>
-          <include name="verifySerchResultForPoloMen"/>
+          <include name="verifyCategryListForTopwear"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
