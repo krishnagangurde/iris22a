@@ -1,15 +1,18 @@
 package com.iris22a.kidtests;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.iris22a.config.TestBase;
 import com.iris22a.keyword.UIKeywords;
-import com.iris22a.pages.kids.KIdsPage;
+import com.iris22a.pages.kids.KidsPage;
 import com.iris22a.pages.kids.KidsDropDownPage;
+import com.iris22a.pages.kids.KidsPage;
 import com.iris22a.utils.Environment;
 
 public class KidsProducts extends TestBase {
@@ -19,7 +22,7 @@ public class KidsProducts extends TestBase {
 		int totalLinks=0;
 		UIKeywords.launchUrl(Environment.URL);
 		KidsDropDownPage kids = new KidsDropDownPage();
-		KIdsPage kid = new KIdsPage();
+		KidsPage kid = new KidsPage();
 		kids.clickOnKidsTab();
 		List<String> linksText = kid.listOfAllLinksOnKidsPage();
 		totalLinks = linksText.size();
@@ -35,6 +38,19 @@ public class KidsProducts extends TestBase {
 		System.out.println("Number of links not having texts are :"+(totalLinks-linksWithText));
 		System.out.println("Total number of links are :"+totalLinks);
 		Assert.assertTrue(linksWithText==totalLinks, "Not all links have a text");
+	}
+	@Test
+	public void checkBrokenUrls() {
+		UIKeywords.launchUrl(Environment.URL);
+		KidsPage kid = new KidsPage();
+		List<WebElement> links =kid.allLinksOnKidsPage;
+		List<String> brokenLinks = new ArrayList<String>() ;
+		for (WebElement element : links) {
+			String link = element.getAttribute("href");
+			String brokenLink = UIKeywords.checkBrokenLink(link);
+			brokenLinks.add(brokenLink);
+		}
+		Assert.assertTrue(!brokenLinks.isEmpty(),"there are "+brokenLinks.size()+" number of broken links on the kids page");
 	}
 
 }

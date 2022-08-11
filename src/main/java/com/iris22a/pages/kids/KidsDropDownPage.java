@@ -32,5 +32,20 @@ public class KidsDropDownPage {
 		UIKeywords.getTexts(boysClothing);
 	}
 	
+	@FindBy(css = "li[data-reactid=\"370\"] li")
+ 	public List<WebElement> listOfGirlsClothing;
+ 	public void listOfGirlsClothing() {
+ 		UIKeywords.getTexts(listOfGirlsClothing);
+ 	}
+ 	@FindBy(css = "li[data-reactid=\"247\"] li")
+ 	public List<WebElement> listOfFootWearAndToys;
+ 	public void listOfFootWearAndToys() {
+ 		UIKeywords.getTexts(listOfFootWearAndToys);
+ 	}
+ 	@FindBy(css = "ul[data-reactid=\"405\"] li")
+ 	public List<WebElement> listOfInfants;
+ 	public void listOfInfants() {
+ 		UIKeywords.getTexts(listOfInfants);
+ 	}
  	
 }
