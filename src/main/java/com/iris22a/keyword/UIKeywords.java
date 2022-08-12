@@ -202,7 +202,7 @@ public class UIKeywords {
 		return texts;
 
 	}
-	
+
 	public static String checkBrokenLink(String linkUrl) {
 		String brokenLink = null;
 		try {
@@ -222,5 +222,6 @@ public class UIKeywords {
 		}
 		return brokenLink;
 	}
+	
 
 }

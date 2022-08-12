@@ -39,6 +39,7 @@ public class KidsProducts extends TestBase {
 		System.out.println("Total number of links are :"+totalLinks);
 		Assert.assertTrue(linksWithText==totalLinks, "Not all links have a text");
 	}
+
 	@Test
 	public void checkBrokenUrls() {
 		UIKeywords.launchUrl(Environment.URL);
