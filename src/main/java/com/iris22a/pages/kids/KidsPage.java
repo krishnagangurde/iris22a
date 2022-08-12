@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.iris22a.keyword.UIKeywords;
 
-public class KIdsPage {
+public class KidsPage {
 
-	public KIdsPage() {
+	public KidsPage() {
 		PageFactory.initElements(UIKeywords.driver, this);
 	}
 	
