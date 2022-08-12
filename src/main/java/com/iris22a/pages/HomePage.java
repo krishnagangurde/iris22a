@@ -16,6 +16,7 @@ public class HomePage {
 	public static final Logger log = Logger.getLogger(HomePage.class);
 	@FindBy(xpath = "//div[@class='desktop-navLink']/a[@href='/shop/men']")
 	public WebElement menMenu;
+	
 	@FindBy(xpath = "//a[@href=\"/men-tshirts\"]")
 	public WebElement menTShirt;
 
@@ -24,6 +25,9 @@ public class HomePage {
 
 	@FindBy(css = "h3.product-brand")
 	public List<WebElement> productText;
+	
+   @FindBy(xpath="//a[contains(text(),\"Formal Shirts\")]")
+	public WebElement menFormalShirts;
 
 	public HomePage() {
 		PageFactory.initElements(UIKeywords.driver, this);
@@ -38,13 +42,14 @@ public class HomePage {
 		log.info("mouse move to men menu");
 
 	}
-
+  
 	public void clickOnmenTShirt() {
 		UIKeywords.click(menTShirt);
 		log.info("click om menTshirt");
 
 	}
 
+	
 	public void searchForPoloText(String productname) {
 		UIKeywords.enterText(searchPolotext, productname);
 		UIKeywords.hitButton(KeyEvent.VK_ENTER);
@@ -58,6 +63,12 @@ public class HomePage {
 		}
 
 		return productText;
+
+	}
+
+	public void clickOnmenFormalShirts() {
+		UIKeywords.click(menFormalShirts);
+		log.info("click om menFormalshirts");
 
 	}
 
