@@ -2,6 +2,8 @@ package com.iris22a.keyword;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -192,5 +194,34 @@ public class UIKeywords {
 		driver.findElement(element).sendKeys(text);
 
 	}
+	public static List<String> getTexts(List<WebElement> element) {
+		List<String> texts = new ArrayList<String>();
+		for (WebElement ele : element) {
+			texts.add(ele.getText());
+		}
+		return texts;
+
+	}
+
+	public static String checkBrokenLink(String linkUrl) {
+		String brokenLink = null;
+		try {
+			URL url = new URL(linkUrl);
+			HttpURLConnection httpUrlConnection = (HttpURLConnection) url.openConnection();
+			httpUrlConnection.setConnectTimeout(5000);
+			httpUrlConnection.connect();
+			
+			if (httpUrlConnection.getResponseCode()>=400) {
+				System.out.println(linkUrl+"===========>"+httpUrlConnection.getResponseMessage()+" a broken link");
+				brokenLink = linkUrl;
+			}else {
+				System.out.println(linkUrl+"===========>"+httpUrlConnection.getResponseMessage());
+			}
+		} catch (Exception e) {
+			
+		}
+		return brokenLink;
+	}
+	
 
 }
