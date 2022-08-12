@@ -48,7 +48,7 @@ public class KidsProducts extends TestBase {
 		List<String> brokenLinks = new ArrayList<String>() ;
 		for (WebElement element : links) {
 			String link = element.getAttribute("href");
-			String brokenLink = UIKeywords.checkBrokenLink(link);
+			String brokenLink = UIKeywords.checkBrokenLink(link);;;;
 			brokenLinks.add(brokenLink);
 		}
 		Assert.assertTrue(!brokenLinks.isEmpty(),"there are "+brokenLinks.size()+" number of broken links on the kids page");
