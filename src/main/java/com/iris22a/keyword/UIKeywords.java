@@ -167,7 +167,7 @@ public class UIKeywords {
 	}
 
 	public static void enterText(String locatortype, String locatorvalue, String text) {
-		getWebElement(locatortype, locatorvalue).sendKeys(text);
+	getWebElement(locatortype, locatorvalue).sendKeys(text);
 	}
 
 	public static void mouseMove(WebElement element) {

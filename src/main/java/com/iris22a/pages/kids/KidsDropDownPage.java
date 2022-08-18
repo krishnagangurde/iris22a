@@ -8,8 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.iris22a.keyword.UIKeywords;
-import com.iris22a.pages.HomePage;
-
 public class KidsDropDownPage {
 	public static final Logger LOG = Logger.getLogger(KidsDropDownPage.class);
 
