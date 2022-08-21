@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-2022-Aug-21 19:47:43,541 [main] com.iris22a.config.TestBase 
+2022-Aug-21 22:20:15,749 [main] com.iris22a.config.TestBase 
   INFO  Chrome is open 
-2022-Aug-21 19:47:47,006 [main] com.iris22a.keyword.UIKeywords 
+2022-Aug-21 22:20:19,104 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is launched https://www.myntra.com
-2022-Aug-21 19:47:51,224 [main] com.iris22a.keyword.UIKeywords 
-=======
-2022-Aug-17 16:46:04,494 [main] com.iris22a.config.TestBase 
-  INFO  Chrome is open 
-2022-Aug-17 16:46:16,996 [main] com.iris22a.keyword.UIKeywords 
-  INFO  url is launched https://www.myntra.com
-2022-Aug-17 16:46:25,193 [main] com.iris22a.pages.men.MenDropDownPage 
-  INFO  Clicked on FormalShirt
-2022-Aug-17 16:46:27,751 [main] com.iris22a.keyword.UIKeywords 
->>>>>>> 756337f4da3dc52137a4dace9a86e09839c41ee1
+2022-Aug-21 22:20:24,385 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is closed succefully
