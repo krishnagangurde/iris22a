@@ -14,7 +14,7 @@ public class MenTShirtTest extends TestBase {
 
 	@Test
 	public void verifySearchResultByPopularity() {
-		keyword.launchUrl(Environment.URL);
+		UIKeywords.launchUrl(Environment.URL);
         HomePage home = new HomePage();
 		home.hoverOnMenMenu();
 		home.clickOnmenTShirt();
