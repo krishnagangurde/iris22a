@@ -30,12 +30,12 @@ public class ProductSteps {
 		home.searchForPoloText("Polo");
 	}
 
-	@Then("all result should be realated polo tshirt.")
+	@Then("all result should be related polo tshirt.")
 	public void verifyAllResult() {
 		HomePage home = new HomePage();
 		List<String> productTexts = home.getSearchResultText();
 		for (String text : productTexts) {
-			Assert.assertTrue(text.contains("Nautica"), "Text is mismatch " + text);
+			Assert.assertTrue(text.contains("Polo"), "Text is mismatch " + text);
 		}
 	}
 	@Then("browser should be close.")
