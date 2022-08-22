@@ -172,7 +172,7 @@ public class UIKeywords {
 
 	public static void mouseMove(WebElement element) {
 		Actions act = new Actions(driver);
-		act.moveToElement(element).build().perform();
+		act.moveToElement(element).perform();
 
 	}
 
