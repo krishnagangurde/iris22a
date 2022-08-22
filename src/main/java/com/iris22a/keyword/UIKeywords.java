@@ -153,7 +153,7 @@ public class UIKeywords {
 
 	public static void mouseMove(String locatortype, String locatorvalue) {
 		Actions action = new Actions(driver);
-		action.moveToElement(getWebElement(locatortype, locatorvalue)).perform();
+		action.moveToElement(getWebElement(locatortype, locatorvalue)).build().perform();
 
 	}
 
