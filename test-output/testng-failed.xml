@@ -5,7 +5,7 @@
     <classes>
       <class name="com.iris22a.mentests.MenProducts">
         <methods>
-          <include name="verifyClickCasualshirts"/>
+          <include name="CategoriesCountofTShirts"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

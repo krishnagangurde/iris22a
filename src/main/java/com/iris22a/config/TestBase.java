@@ -1,6 +1,8 @@
 package com.iris22a.config;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -9,12 +11,16 @@ import org.testng.annotations.Parameters;
 import com.iris22a.keyword.UIKeywords;
 import com.iris22a.utils.Environment;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+
 public class TestBase {
 	public static final Logger log = Logger.getLogger(TestBase.class);
 	
-	@Parameters("browserName")
+	
 	@BeforeMethod
-	public void setUp(@ Optional String browserName) throws Exception {
+	public void setUp() throws Exception {
+		String browserName=Environment.BROWSER;
 		if (browserName==null || browserName.isEmpty()) {
 			browserName="Chrome";
 		}
@@ -34,7 +40,6 @@ public class TestBase {
 		UIKeywords.closeBrowser();
 		
 	}
-	
-
+	 
 
 }

@@ -1,6 +1,7 @@
 package com.iris22a.utils;
 
 public class Environment {
+	public static String BROWSER = null;
 	public static String filepath="/src/main/resources/Environment.properties";
 	public static String URL;
 	public static String user1;
@@ -11,7 +12,8 @@ public class Environment {
 		String baseDir = System.getProperty("user.dir");// CWD
          URL=prop.getValue(baseDir+filepath,"app_url");
          user1=prop.getValue(baseDir+filepath,"app_user1");// we not use this in current progrram
-	
+         BROWSER=prop.getValue(baseDir+filepath,"browser_name");// we not use this in current progrram
+
 	}
 	
 	
