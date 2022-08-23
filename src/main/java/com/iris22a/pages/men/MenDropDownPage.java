@@ -25,6 +25,12 @@ public class MenDropDownPage{
 	@FindBy(xpath="//a[contains(text(),\"Formal Shirts\")]")
 	public WebElement FormalShirts;
 	
+	@FindBy(css="a.desktop-categoryLink[href*=\"men-tshirts\"")
+	public WebElement TShirts;
+	
+	@FindBy(css="a.desktop-categoryLink[href=\"/men-casual-shirts\"]")
+	public WebElement CasualShirts;
+	
 	
 	
 	
@@ -43,13 +49,19 @@ public class MenDropDownPage{
 	}
 	public void clickonFormalShirts() { 
 		UIKeywords.click(FormalShirts);
+ 	LOG.info("Clicked on FormalShirt");
+	}
+	public void clickonTShirts() {
+     UIKeywords.click(TShirts);
+	}
 	
-	LOG.info("Clicked on FormalShirt");
-	
+	public void clickonCasualShirts() {
+		UIKeywords.click(CasualShirts);
 	}
 	
 	
-     public By itemCount=By.xpath("//span[@class=\"title-count\"]");
+	
+       public By itemCount=By.xpath("//span[@class=\"title-count\"]");
         public int  getItemCount() {
 		String itemCount=UIKeywords.driver.findElement(this.itemCount).getText();
      	Pattern p=Pattern.compile("//d");
@@ -57,8 +69,6 @@ public class MenDropDownPage{
 		String count = m.group();
 		return Integer.parseInt(itemCount); 
 	 }
-	
-	
 }
 	
 
