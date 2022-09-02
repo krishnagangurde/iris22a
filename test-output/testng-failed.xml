@@ -5,6 +5,8 @@
     <classes>
       <class name="com.iris22a.mentests.MenProducts">
         <methods>
+          <include name="verifyCategryListForTopwear"/>
+          <include name="veryfyItemCountofFormalShirts"/>
           <include name="CategoriesCountofTShirts"/>
           <include name="setUp"/>
           <include name="tearDown"/>
