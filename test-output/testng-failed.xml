@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.iris22a.kidtests.KidsProducts">
+      <class name="com.iris22a.womentest.WomenTest">
         <methods>
           <include name="setUp"/>
-          <include name="verifyIfAllLinksHaveTexts"/>
+          <include name="verifysearchresultforkurta"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.iris22a.kidtests.KidsProducts -->
+      </class> <!-- com.iris22a.womentest.WomenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

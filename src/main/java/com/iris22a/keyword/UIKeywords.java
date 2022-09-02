@@ -2,6 +2,7 @@ package com.iris22a.keyword;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
