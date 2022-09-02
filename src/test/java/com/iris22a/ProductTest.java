@@ -14,7 +14,7 @@ import com.iris22a.keyword.UIKeywords;
 import com.iris22a.utils.Environment;
 import com.iris22a.utils.PropUtils;
 
-public class ProductTest extends TestBase{
+public class ProductTest extends TestBase {
 	@Test
 	public static void verifySerchResultForPoloMen() {
 
@@ -46,7 +46,6 @@ public class ProductTest extends TestBase{
 		expected.add("Sweaters");
 		expected.add("Blazers");
 
-
 		PropUtils repo = new PropUtils();
 		UIKeywords.launchUrl(Environment.URL);
 		UIKeywords.mouseMove(repo.getLocator("men_menu")[0], repo.getLocator("men_menu")[1]);
@@ -60,8 +59,6 @@ public class ProductTest extends TestBase{
 
 		Assert.assertTrue(actualcategory.containsAll(expected), "List of Categaory is not matching" + actualcategory);
 
-
-}
-
+	}
 
 }
