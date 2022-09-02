@@ -2,13 +2,14 @@ package com.iris22a.pages;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.iris22a.keyword.UIKeywords;
 
@@ -61,10 +62,11 @@ public class HomePage {
 		for (WebElement product : this.productText) {
 			productText.add(product.getText());
 		}
-
+ 
 		return productText;
-
+		
 	}
+	
 
 	public void clickOnmenFormalShirts() {
 		UIKeywords.click(menFormalShirts);
