@@ -9,6 +9,8 @@
       <class name="com.iris22a.mentests.MenProducts">
 >>>>>>> b635d7cd105315e9658f40b9d4c7393e5f6faa4d
         <methods>
+          <include name="verifyCategryListForTopwear"/>
+          <include name="veryfyItemCountofFormalShirts"/>
           <include name="CategoriesCountofTShirts"/>
           <include name="setUp"/>
 <<<<<<< HEAD

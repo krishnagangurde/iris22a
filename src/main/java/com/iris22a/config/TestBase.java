@@ -7,6 +7,13 @@ import org.testng.annotations.BeforeMethod;
 import com.iris22a.keyword.UIKeywords;
 import com.iris22a.utils.Environment;
 
+<<<<<<< HEAD
+=======
+
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+>>>>>>> b3b872d89d6cdf995b696a30d7df176a42edf01c
 
 public class TestBase {
 	public static final Logger log = Logger.getLogger(TestBase.class);
