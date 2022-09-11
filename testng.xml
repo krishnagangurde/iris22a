@@ -5,6 +5,7 @@
     <classes>
       <class name="com.iris22a.ProductTest"/>
       <class name="com.iris22a.MenTShirtTest"/>
+      <class name="com.iris22a.womentest.WomenTest"/>
       <class name="com.iris22a.config.TestBase"/>
     </classes>
   </test> <!-- Test -->
