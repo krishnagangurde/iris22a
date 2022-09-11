@@ -1,20 +1,34 @@
-2022-Sep-10 20:40:06,723 [main] com.iris22a.config.TestBase 
+2022-Sep-11 16:22:00,073 [main] com.iris22a.config.TestBase 
   INFO  Chrome is open 
-2022-Sep-10 20:40:15,630 [main] com.iris22a.keyword.UIKeywords 
+2022-Sep-11 16:22:04,868 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is launched https://www.myntra.com
-2022-Sep-10 20:40:16,069 [main] com.iris22a.keyword.UIKeywords 
-  INFO  Enter button has press 
-2022-Sep-10 20:40:21,734 [main] com.iris22a.keyword.UIKeywords 
+2022-Sep-11 16:22:05,179 [main] com.iris22a.pages.HomePage 
+  INFO  mouse move to men menu
+2022-Sep-11 16:22:09,606 [main] com.iris22a.pages.HomePage 
+  INFO  click om menTshirt
+2022-Sep-11 16:22:09,792 [main] com.iris22a.pages.menTShirtsPage 
+  INFO  mousemove to sortByfilter
+2022-Sep-11 16:22:10,063 [main] com.iris22a.pages.menTShirtsPage 
+  INFO  click on popularityfilter
+2022-Sep-11 16:22:10,238 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is closed succefully
-2022-Sep-10 20:40:23,064 [main] com.iris22a.config.TestBase 
+2022-Sep-11 16:22:11,596 [main] com.iris22a.config.TestBase 
   INFO  Chrome is open 
-2022-Sep-10 20:40:30,502 [main] com.iris22a.keyword.UIKeywords 
+2022-Sep-11 16:22:15,613 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is launched https://www.myntra.com
-2022-Sep-10 20:40:30,502 [main] com.iris22a.womentest.WomenTest 
+2022-Sep-11 16:22:16,073 [main] com.iris22a.keyword.UIKeywords 
+  INFO  Enter button has press 
+2022-Sep-11 16:22:20,849 [main] com.iris22a.keyword.UIKeywords 
+  INFO  url is closed succefully
+2022-Sep-11 16:22:22,373 [main] com.iris22a.config.TestBase 
+  INFO  Chrome is open 
+2022-Sep-11 16:22:27,085 [main] com.iris22a.keyword.UIKeywords 
+  INFO  url is launched https://www.myntra.com
+2022-Sep-11 16:22:27,085 [main] com.iris22a.womentest.WomenTest 
   INFO  myntra url launched
-2022-Sep-10 20:40:30,699 [main] com.iris22a.womentest.WomenTest 
+2022-Sep-11 16:22:27,289 [main] com.iris22a.womentest.WomenTest 
   INFO  hover on women menu
-2022-Sep-10 20:40:36,907 [main] com.iris22a.womentest.WomenTest 
+2022-Sep-11 16:22:31,542 [main] com.iris22a.womentest.WomenTest 
   INFO  click on indian & fusionwear
-2022-Sep-10 20:40:37,070 [main] com.iris22a.keyword.UIKeywords 
+2022-Sep-11 16:22:31,721 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is closed succefully
