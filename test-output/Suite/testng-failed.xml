@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Internet Explorer(failed)">
+    <parameter name="browserName" value="Internet Explorer"/>
+    <classes>
+      <class name="com.iris22a.ProductTest">
+        <methods>
+          <include name="verifySerchResultForPoloMen"/>
+          <include name="verifyCategryListForTopwear"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.iris22a.ProductTest -->
+      <class name="com.iris22a.MenTShirtTest">
+        <methods>
+          <include name="verifySearchResultByPopularity"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.iris22a.MenTShirtTest -->
+    </classes>
+  </test> <!-- Internet Explorer(failed) -->
+  <test thread-count="3" parallel="tests" name="Firefox(failed)">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="com.iris22a.ProductTest">
+        <methods>
+          <include name="verifySerchResultForPoloMen"/>
+          <include name="verifyCategryListForTopwear"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.iris22a.ProductTest -->
+      <class name="com.iris22a.MenTShirtTest">
+        <methods>
+          <include name="verifySearchResultByPopularity"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.iris22a.MenTShirtTest -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+  <test thread-count="3" parallel="tests" name="Chrome(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="com.iris22a.ProductTest">
+        <methods>
+          <include name="verifySerchResultForPoloMen"/>
+          <include name="verifyCategryListForTopwear"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.iris22a.ProductTest -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

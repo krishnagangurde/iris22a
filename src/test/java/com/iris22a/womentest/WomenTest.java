@@ -3,7 +3,6 @@ package com.iris22a.womentest;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -35,7 +34,7 @@ public class WomenTest extends TestBase {
 		home.searchforkurta("kurta");
 		List<String> productTexts = home.getKurtaList();
 		for (String text : productTexts) {
-			Assert.assertTrue(text.contains("kurta"), "Text is mismatch " + text);
+			Assert.assertTrue(text.contains("Women Kurtas"), "Text is mismatch " + text );
 		}
 		
 		

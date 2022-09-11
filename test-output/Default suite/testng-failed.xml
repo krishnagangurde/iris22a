@@ -3,26 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="com.iris22a.womentest.WomenTest">
-=======
-      <class name="com.iris22a.mentests.MenProducts">
->>>>>>> b635d7cd105315e9658f40b9d4c7393e5f6faa4d
         <methods>
-          <include name="verifyCategryListForTopwear"/>
-          <include name="veryfyItemCountofFormalShirts"/>
-          <include name="CategoriesCountofTShirts"/>
           <include name="setUp"/>
-<<<<<<< HEAD
           <include name="verifysearchresultforkurta"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.iris22a.womentest.WomenTest -->
-=======
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.iris22a.mentests.MenProducts -->
->>>>>>> b635d7cd105315e9658f40b9d4c7393e5f6faa4d
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

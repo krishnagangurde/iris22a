@@ -1,37 +1,20 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-2022-Sep-02 22:53:33,818 [main] com.iris22a.config.TestBase 
+2022-Sep-10 20:40:06,723 [main] com.iris22a.config.TestBase 
   INFO  Chrome is open 
-2022-Sep-02 22:53:37,824 [main] com.iris22a.keyword.UIKeywords 
+2022-Sep-10 20:40:15,630 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is launched https://www.myntra.com
-2022-Sep-02 22:53:38,285 [main] com.iris22a.keyword.UIKeywords 
+2022-Sep-10 20:40:16,069 [main] com.iris22a.keyword.UIKeywords 
   INFO  Enter button has press 
-2022-Sep-02 22:53:44,984 [main] com.iris22a.keyword.UIKeywords 
-=======
-=======
-2022-Aug-21 21:11:41,361 [main] com.iris22a.config.TestBase 
+2022-Sep-10 20:40:21,734 [main] com.iris22a.keyword.UIKeywords 
+  INFO  url is closed succefully
+2022-Sep-10 20:40:23,064 [main] com.iris22a.config.TestBase 
   INFO  Chrome is open 
-2022-Aug-21 21:11:44,684 [main] com.iris22a.keyword.UIKeywords 
+2022-Sep-10 20:40:30,502 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is launched https://www.myntra.com
-2022-Aug-21 21:11:50,807 [main] com.iris22a.keyword.UIKeywords 
-  INFO  url is launched https://www.myntra.com/
-2022-Aug-21 21:11:51,101 [main] com.iris22a.keyword.UIKeywords 
-  INFO  Enter button has press 
-2022-Aug-21 21:11:54,328 [main] com.iris22a.keyword.UIKeywords 
-2022-Aug-21 19:47:43,541 [main] com.iris22a.config.TestBase 
->>>>>>> b3b872d89d6cdf995b696a30d7df176a42edf01c
-2022-Aug-23 16:19:04,532 [main] com.iris22a.config.TestBase 
-  INFO  Chrome is open 
-2022-Aug-23 16:19:07,456 [main] com.iris22a.keyword.UIKeywords 
-  INFO  url is launched https://www.myntra.com
-2022-Aug-21 19:47:51,224 [main] com.iris22a.keyword.UIKeywords 
-2022-Aug-17 16:46:04,494 [main] com.iris22a.config.TestBase 
-  INFO  Chrome is open 
-2022-Aug-17 16:46:16,996 [main] com.iris22a.keyword.UIKeywords 
-  INFO  url is launched https://www.myntra.com
-2022-Aug-17 16:46:25,193 [main] com.iris22a.pages.men.MenDropDownPage 
-  INFO  Clicked on FormalShirt
-2022-Aug-17 16:46:27,751 [main] com.iris22a.keyword.UIKeywords 
-2022-Aug-23 16:19:12,392 [main] com.iris22a.keyword.UIKeywords 
->>>>>>> b635d7cd105315e9658f40b9d4c7393e5f6faa4d
+2022-Sep-10 20:40:30,502 [main] com.iris22a.womentest.WomenTest 
+  INFO  myntra url launched
+2022-Sep-10 20:40:30,699 [main] com.iris22a.womentest.WomenTest 
+  INFO  hover on women menu
+2022-Sep-10 20:40:36,907 [main] com.iris22a.womentest.WomenTest 
+  INFO  click on indian & fusionwear
+2022-Sep-10 20:40:37,070 [main] com.iris22a.keyword.UIKeywords 
   INFO  url is closed succefully
