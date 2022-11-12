@@ -8,11 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">306,983</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">34,237</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.iris22a.mentests.MenProducts</td><td><a href="#m0">verifyClickCasualshirts</a></td><td rowspan="1">1661251744538</td><td rowspan="1">5392</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.iris22a.ProductTest</td><td><a href="#m0">verifyCategryListForTopwear</a></td><td rowspan="1">1664009551220</td><td rowspan="1">5699</td></tr><tr class="failedeven"><td><a href="#m1">verifySerchResultForPoloMen</a></td><td rowspan="1">1664009558149</td><td rowspan="1">10181</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.iris22a.MenTShirtTest</td><td><a href="#m2">verifySearchResultByPopularity</a></td><td rowspan="1">1664009571539</td><td rowspan="1">7093</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.iris22a.mentests.MenProducts#verifyClickCasualshirts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.iris22a.ProductTest#verifyCategryListForTopwear</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.split(String)&quot; because the return value of &quot;com.iris22a.utils.PropUtils.getValue(String, String)&quot; is null
+	at com.iris22a.utils.PropUtils.getLocator(PropUtils.java:35)
+	at com.iris22a.ProductTest.verifyCategryListForTopwear(ProductTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.iris22a.ProductTest#verifySerchResultForPoloMen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError:  product title  doesnt contain polo men it contains:- berry blues expected [true] but found [false]
+	at com.iris22a.ProductTest.verifySerchResultForPoloMen(ProductTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.iris22a.MenTShirtTest#verifySearchResultByPopularity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

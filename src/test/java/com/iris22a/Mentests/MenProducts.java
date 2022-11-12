@@ -1,4 +1,4 @@
-package com.iris22a.mentests;
+package com.iris22a.Mentests;
 
 import java.util.ArrayList;
 import java.util.List;
